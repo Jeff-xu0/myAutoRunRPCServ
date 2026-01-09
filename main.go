@@ -47,7 +47,9 @@ func startWebSocketServer(wg *sync.WaitGroup) {
 		ws.HandleConnection(w, r, ws.CM, param)
 	})
 
-	fmt.Println("WebSocket server started on", wsPort)
+	fmt.Println("WebSocket server started on xxxx", wsPort)
+	fmt.Println("WebSocket server aaaa on xxxx", wsPort)
+	fmt.Println("WebSocket xxxxx aaaa on xxxx", wsPort)
 	if err := http.ListenAndServe(wsPort, r); err != nil {
 		fmt.Println("Error starting server:", err)
 	}
